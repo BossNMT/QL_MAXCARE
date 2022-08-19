@@ -1,3 +1,67 @@
 .header {
   padding: 0.5rem 1rem;
 }
+
+.p-r-8 {
+  padding-right: 8px;
+}
+.p-l-8 {
+  padding-left: 8px;
+}
+
+// Button
+button.btn-hover{
+  &:hover {
+    background-color: #474d54;
+    color: #fff !important;
+  }
+}
+
+.btn-text-12 span {
+  font-size: 12px;
+}
+
+.wall-left::before {
+  background: #0000006e;
+  content: '';
+  display: block;
+  height: 18px;
+  left: -1px;
+  position: absolute;
+  top: 7px;
+  width: 1px;
+}
+
+// Custom ant
+.ant-btn-icon-only > * {
+  font-size: 17px;
+}
+
+.ant-divider-vertical {
+  left: 4px;
+  background-color: #0000002e;
+  height: 18px;
+  margin: 0;
+}
+
+.border-rd-5 {
+  border-radius: 5px;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+
+
+.margin-3 {
+  margin: 3px;
+}
+
+
+.height-30{
+  height: 30px;
+}
+
+
+.height-45{
+  height: 45px;
+}

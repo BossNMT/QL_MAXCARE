@@ -33,11 +33,11 @@ const Login: React.FC = (): JSX.Element => {
   return (
     <div className="login full-screen display-flex-center justify-content-center position-rel">
       <div className="login__wrap">
-        <div className="text-center login__logo">
+        {/* <div className="text-center login__logo">
           <figure className="margin-0 p-0">
             <img src={imgLogo} alt="Logo" />
           </figure>
-        </div>
+        </div> */}
         <Form
           labelCol={{ span: 24 }}
           wrapperCol={{ span: 24 }}

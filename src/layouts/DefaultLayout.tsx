@@ -34,9 +34,6 @@ const DefaultLayout = () => {
 
   return (
     <Layout className="site-layout" style={{ minHeight: '100vh' }}>
-      <Suspense fallback={loading()}>
-        <Sidebar />
-      </Suspense>
       <Layout className="main-layout">
         <Suspense fallback={loading()}>
           <Header />

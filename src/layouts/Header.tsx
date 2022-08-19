@@ -1,6 +1,13 @@
-import { Avatar, Col, Dropdown, Menu, Row, Space, Typography } from 'antd';
+import { Avatar, Col, Dropdown, Menu, Row, Space, Typography, Button, Image, Divider } from 'antd';
 // import { useAppDispatch } from 'hooks/hookStore';
 import { useEffect } from 'react';
+import { 
+  SettingFilled, 
+  GlobalOutlined, 
+  MailFilled, 
+  TeamOutlined, 
+  MenuOutlined 
+} from '@ant-design/icons';
 // import { changeLanguage } from 'i18next';
 // import { useTranslation } from 'react-i18next';
 // import { useSelector } from 'react-redux';
@@ -58,39 +65,40 @@ const Header = () => {
   return (
     <>
       <header
-        style={{ position: 'sticky', zIndex: '998' }}
-        className="header d-flex justify-content-between bg-color-light top-0"
+        style={{ position: 'sticky', zIndex: '998', backgroundColor: '#515b6f' }}
+        className="height-45 display-flex-space-around padding-0"
       >
-        <Row>
-          <Col span={12}>
-            <Typography.Title level={3} className="margin-0">
-              {location.pathname === '/order' ? 'Danh sách đơn hàng' : ''}
-            </Typography.Title>
-            {/* <a href="javscript:;" className="header__toggle" onClick={toggleLayout}>
-              {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            </a> */}
-          </Col>
-          <Col span={12} className="text-right">
-            <Space>
-              {/* <div>
-                <i className="icon icon-earth" />
-
-                <Select
-                  defaultValue="vi"
-                  className="language__select antd-select-custom"
-                  style={{ width: 100 }}
-                  onChange={onChangeLang}
-                >
-                  <Option value="vi">Tiếng Việt</Option>
-                  <Option value="en">English</Option>
-                </Select>
-              </div> */}
-              <Dropdown overlay={menuProfile} placement="topRight" arrow>
-                <Avatar style={{ backgroundColor: '#87d068' }} icon={<i className="icon icon-bell2" />} />
-              </Dropdown>
-            </Space>
-          </Col>
-        </Row>
+        <div style={{ width: '1140px' }} className="full-height d-flex justify-content-between">
+          <Row className="align-items-center full-height">
+            <Col span={12}>
+              {/* <Typography.Title level={4} className="margin-0 color-light font-size-18">
+                MyMin Tools
+              </Typography.Title> */}
+              <span className="color-light font-size-18 font-weight-normal">MyMin Tools</span>
+              {/* <a href="javscript:;" className="header__toggle" onClick={toggleLayout}>
+                {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              </a> */}
+            </Col>
+            <Col span={12} className="text-right">
+              <div className="d-flex header__right">
+                <Space size={4}>
+                  <Avatar
+                    style={{ width: 24, height: 24 }}
+                    src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/0dcb2b189a5b65405ee4d2e946e50038~c5_100x100.jpeg?x-expires=1660813200&x-signature=5aKm5C%2B3L5gaqkv5vsrlukgI8fU%3D" 
+                  />
+                  <Button style={{ fontSize: 12 }} className="color-light btn-hover border-rd-5 font-weight-bold p-r-8 p-l-8" type="link">Tran</Button>
+                  <Divider type="vertical" />
+                  <Button style={{ fontSize: 12 }} className="color-light btn-hover border-rd-5 font-weight-bold p-r-8 p-l-8" type="link">Trang Chủ</Button>
+                  <Button className="color-dark btn-hover border-rd-5" type="link" icon={<MenuOutlined />}/>
+                  <Button className="color-dark btn-hover border-rd-5" type="link" icon={<TeamOutlined />}/>
+                  <Button className="color-dark btn-hover border-rd-5" type="link" icon={<MailFilled />}/>
+                  <Button className="color-dark btn-hover border-rd-5" type="link" icon={<GlobalOutlined />}/>
+                  <Button className="color-dark btn-hover border-rd-5" type="link" icon={<SettingFilled />}/>
+                </Space>
+              </div>
+            </Col>
+          </Row>
+        </div>
       </header>
     </>
   );
