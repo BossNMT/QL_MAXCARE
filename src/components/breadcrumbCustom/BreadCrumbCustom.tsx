@@ -41,7 +41,7 @@ const BreadCrumbCustom = () => {
   const breadcrumbItems = [
     <Breadcrumb.Item key="home">
       <Link style={{ fontSize: '14px', color: '#708180', fontWeight: 600 }} to="/">
-        Trang chủ
+        Home
       </Link>
     </Breadcrumb.Item>,
   ].concat(extraBreadcrumbItems);

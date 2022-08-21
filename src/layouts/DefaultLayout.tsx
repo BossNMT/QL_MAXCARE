@@ -4,9 +4,10 @@ import { Layout, Spin } from 'antd';
 import { isLogin } from 'utils/jwt';
 import BreadCrumbCustom from 'components/breadcrumbCustom/BreadCrumbCustom';
 const Header = React.lazy(() => import('./Header'));
-const Sidebar = React.lazy(() => import('./Sidebar'));
+// const Sidebar = React.lazy(() => import('./Sidebar'));
 const PermissionContent = React.lazy(() => import('middleware/PermissionContent'));
 import MenuHeader from './MenuHeader';
+import SidebarLeft from './SidebarLeft';
 
 const { Content } = Layout;
 
@@ -36,22 +37,33 @@ const DefaultLayout = () => {
   return (
     <Layout className="site-layout" style={{ minHeight: '100vh' }}>
       <Layout className="main-layout">
-        <Suspense fallback={loading()}>
-          <Header />
+        <div className="header-container">
+          <Suspense fallback={loading()}>
+            <Header />
+          </Suspense>
           <div className="menu-header">
             <MenuHeader />
           </div>
-        </Suspense>
-        <Content style={{ overflow: 'initial' }}>
-          <div className="bg-main position-rel">
-            <div style={{ padding: '20px 0' }}>
-              <BreadCrumbCustom />
+        </div>
+        <Layout className="border-content">
+          <SidebarLeft />
+          <Content
+            className="bg-color-light m-t-5 m-r-15 m-l-15 border-rd-3"
+            style={{ overflow: 'initial', boxShadow: '0 20px 25px -12px #00000017' }}
+          >
+            <div className="bg-main position-rel p-r-20 p-l-20 p-t-5">
+              <div style={{ padding: '20px 0' }}>
+                <BreadCrumbCustom />
+              </div>
+              <Suspense fallback={loading()}>
+                <PermissionContent />
+              </Suspense>
             </div>
-            <Suspense fallback={loading()}>
-              <PermissionContent />
-            </Suspense>
+          </Content>
+          <div className="sidebar-right m-t-5" style={{ width: '254.93px', height: '200px', backgroundColor: 'red' }}>
+            Sidebar Right
           </div>
-        </Content>
+        </Layout>
       </Layout>
     </Layout>
   );

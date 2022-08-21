@@ -1,29 +1,29 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+// import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import PermissionRoute from 'middleware/PermissionRoute';
 import './styles/_sidebar.scss';
-import logo from 'assets/images/logo.png';
-import { collapseSidebar } from 'store/common/commonSlice';
-import { useAppDispatch, useAppSelector } from 'hooks/hookStore';
+// import logo from 'assets/images/logo.png';
+// import { collapseSidebar } from 'store/common/commonSlice';
+// import { useAppSelector } from 'hooks/hookStore';
 
 const Sidebar = () => {
-  const collapse = useAppSelector((state: any) => state.common.isCloseSidebar);
-  const dispatch = useAppDispatch();
+  // const collapse = useAppSelector((state: any) => state.common.isCloseSidebar);
+  // const dispatch = useAppDispatch();
 
-  const toggleLayout = (): void => {
-    dispatch(collapseSidebar());
-  };
+  // const toggleLayout = (): void => {
+  //   dispatch(collapseSidebar());
+  // };
 
   return (
     <Layout.Sider
       trigger={null}
       collapsible
-      collapsed={collapse}
+      // collapsed={collapse}
       style={{ position: 'sticky', zIndex: '999', height: '100vh' }}
       className="position-rel top-0"
     >
-      <div className="display-flex justify-content-center logo">
+      {/* <div className="display-flex justify-content-center logo">
         <img src={logo} alt="logo" />
         <div className="collapse-sidebar">
           <button
@@ -37,7 +37,9 @@ const Sidebar = () => {
             )}
           </button>
         </div>
-      </div>
+      </div> */}
+
+      <div className="sidebar">Sidebar</div>
       <PermissionRoute />
       {/* <Menu className="sidebar-full-height" mode="inline" openKeys={openKeys} onOpenChange={onOpenChange}>
         {renderMenus()}
