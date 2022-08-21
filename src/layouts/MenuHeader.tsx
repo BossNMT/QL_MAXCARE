@@ -1,7 +1,8 @@
-import { Menu } from 'antd'
-import { useState } from 'react';
+import type { MenuProps } from 'antd';
+import { Menu } from 'antd';
+import React, { useState } from 'react';
 
-const items = [
+const items: MenuProps['items']  = [
     {
       label: 'Home',
       key: 'Home',
@@ -46,17 +47,17 @@ const items = [
         label: 'API',
         key: 'API',
     }
-  ];
+];
 
-const MenuHeader = () => {
-    const [current, setCurrent] = useState('mail');
+const MenuHeader: React.FC = () => {
+    const [current, setCurrent] = useState('Home');
 
-    const onClick = (e) => {
+    const onClick: MenuProps['onClick'] = e => {
         console.log('click ', e);
         setCurrent(e.key);
     };
 
-    return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+    return <Menu className='height-43 menu-header justify-content-center' onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
 }
 
 export default MenuHeader

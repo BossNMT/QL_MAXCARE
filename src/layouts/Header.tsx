@@ -13,7 +13,6 @@ import { useNavigate } from 'react-router-dom';
 import { destroyLogged, saveAuth } from 'utils/jwt';
 import './styles/_header.scss';
 import Control from './Control';
-import MenuHeader from './MenuHeader';
 
 // const { Option } = Select;
 
@@ -80,9 +79,6 @@ const Header = () => {
               <Control />
             </Col>
           </Row>
-          <div className="menu-header">
-            <MenuHeader />
-          </div>
         </div>
       </header>
     </>

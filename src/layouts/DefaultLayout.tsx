@@ -6,6 +6,7 @@ import BreadCrumbCustom from 'components/breadcrumbCustom/BreadCrumbCustom';
 const Header = React.lazy(() => import('./Header'));
 const Sidebar = React.lazy(() => import('./Sidebar'));
 const PermissionContent = React.lazy(() => import('middleware/PermissionContent'));
+import MenuHeader from './MenuHeader';
 
 const { Content } = Layout;
 
@@ -37,6 +38,9 @@ const DefaultLayout = () => {
       <Layout className="main-layout">
         <Suspense fallback={loading()}>
           <Header />
+          <div className="menu-header">
+            <MenuHeader />
+          </div>
         </Suspense>
         <Content style={{ overflow: 'initial' }}>
           <div className="bg-main position-rel">

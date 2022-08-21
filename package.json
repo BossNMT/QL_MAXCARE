@@ -22,7 +22,7 @@
         "@reduxjs/toolkit": "^1.7.2",
         "@types/react-loadable": "^5.5.6",
         "@types/react-router-dom": "^5.3.3",
-        "antd": "4.2.0",
+        "antd": "^4.22.6",
         "axios": "^0.26.0",
         "clean-webpack-plugin": "^4.0.0",
         "date-fns": "^2.28.0",
