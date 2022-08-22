@@ -1,0 +1,20 @@
+.account-container:hover {
+    background-color: #f6fbff;
+}
+
+.list-icons-account  {
+    .anticon-up:hover, 
+    .anticon-down:hover,
+    .anticon-delete:hover {
+        transform: scale(1.2);
+    }
+}
+
+// Icon
+.iconUpDown {
+    display: none;
+}
+
+.account-container:hover .iconUpDown {
+    display: inline-block;
+}

@@ -60,7 +60,15 @@ const DefaultLayout = () => {
               </Suspense>
             </div>
           </Content>
-          <div className="sidebar-right m-t-5" style={{ width: '254.93px', height: '200px', backgroundColor: 'red' }}>
+          <div
+            className="sidebar-right bg-color-light"
+            style={{
+              width: '254.93px',
+              height: '100vh',
+              border: '1px solid #ddd',
+              boxShadow: 'rgb(0 0 0 / 16%) 0px 6px 10px -4px',
+            }}
+          >
             Sidebar Right
           </div>
         </Layout>

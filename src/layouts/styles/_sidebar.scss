@@ -88,4 +88,28 @@
   span {
     padding-right: 0 !important;
   }
+  .ant-checkbox-checked::after {
+    border: none;
+  }
+  .ant-checkbox-inner {
+    background-color: transparent;
+    border-color: #ccc !important;
+  }
+  .ant-checkbox-inner::after {
+    border-color: #72c02c !important;
+  }
+  .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: #ccc;
+  }
+  &:hover .ant-checkbox-inner {
+    border-color: #ccc;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    border-color: #72c02c !important;
+  }
+}
+
+// Icon
+.icon-groups .icon:hover {
+  color: #72c02c !important;
 }
