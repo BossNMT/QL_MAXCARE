@@ -15,10 +15,6 @@
   height: 30px;
 }
 
-.height-45{
-  height: 45px;
-}
-
 .height-43{
   height: 43px;
 }
@@ -41,10 +37,7 @@
 }
 
 .menu-header .ant-menu-title-content {
-  font-size: 14px;
-  font-weight: 400;
   color: #4b4f56;
-  letter-spacing: 0.4px;
 }
 
 .menu-header .ant-menu-item-selected {
@@ -54,11 +47,10 @@
 .menu-header .ant-menu-item-selected .ant-menu-title-content{
   color: #1d2129;
   font-weight: bold;
-  letter-spacing: -0.8px;
 }
 
 .menu-header .ant-menu-item {
-  padding: 0 15px !important;
+  padding: 0 16px !important;
   background-color: #fff;
 }
 
@@ -76,7 +68,7 @@
   border-bottom: 3px solid #fff;
 }
 
-.menu-header > .ant-menu-item-selected::after {
+.menu-header.ant-menu-horizontal > .ant-menu-item-selected::after {
   border-bottom: 3px solid #4267b2 !important;
 }
 

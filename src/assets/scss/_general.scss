@@ -214,6 +214,9 @@ img {
 .border-0 {
   border: 0;
 }
+.border-rd-0 {
+  border-radius: 0px;
+}
 .border-rd-2 {
   border-radius: 2px;
 }
@@ -222,6 +225,9 @@ img {
 }
 .border-rd-4 {
   border-radius: 4px;
+}
+.border-rd-5 {
+  border-radius: 5px;
 }
 .border-rd-6 {
   border-radius: 6px;
@@ -275,6 +281,9 @@ img {
 
 .cursor-pointer {
   cursor: pointer;
+}
+.cursor-unset {
+  cursor: unset;
 }
 .cursor-no-drop {
   cursor: no-drop;
@@ -460,7 +469,9 @@ figure {
 .pointer-events-none {
   pointer-events: none;
 }
-
 .border-#ddd {
   border: 1px solid #ddd;
+}
+.letter-spacing-0 {
+  letter-spacing: 0;
 }

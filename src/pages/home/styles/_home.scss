@@ -1,0 +1,57 @@
+.input-home::placeholder {
+    color: #d2d4d6;
+}
+
+// Checkbox
+.checkbox-home  {
+  .ant-checkbox-inner {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+  }
+  span {
+    padding-right: 0 !important;
+  }
+  .ant-checkbox-checked::after {
+    border: none;
+  }
+  .ant-checkbox-inner {
+    border-color: #ccc !important;
+  }
+  .ant-checkbox-inner::after {
+    border-color: #fff !important;
+  }
+  .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: #ccc;
+  }
+  &:hover .ant-checkbox-inner {
+    border-color: #ccc;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    border-color: #72c02c !important;
+    background-color: #72c02c;
+  }
+}
+
+.icon-color:hover {
+  color: #72c02c !important; 
+}
+
+// Account Home
+.wrapper-account {
+  background-color: #ba636313;
+}
+.wrapper-account:hover {
+  background-color: #00000013;
+}
+
+// Text Decoration
+.info-Link:hover {
+  text-decoration: underline #72c02c;
+}
+
+// InfoAccount
+.list-item {
+  padding: 0 5px;
+  border-right: 1px solid #e3e3e3;
+}

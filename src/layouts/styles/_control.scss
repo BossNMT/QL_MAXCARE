@@ -1,33 +1,32 @@
 .btn-control.ant-btn {
+    display: flex;
+    align-items: center;
     border: none;
     border-radius: 5px;
     color: #0a0a0a;
     height: 30px;
+    padding: 10px;
+    
     &:hover {
         background-color: #474d54 !important;
         color: #fff !important;
     }
-    & .anticon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // & .anticon {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 }
 
-.ant-btn-icon-only > * {
-    font-size: 15px;
-}
+// .ant-btn-icon-only > * {
+//     font-size: 15px;
+// }
 
 .divider-control.ant-divider {
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 7px;
-    left: 299px;
+    top: 14px;
+    left: 281px;
     height: 18px;
     width: 1px;
-}
-
-.p-r-l-8 {
-    padding-right: 8px;
-    padding-left: 8px;
 }

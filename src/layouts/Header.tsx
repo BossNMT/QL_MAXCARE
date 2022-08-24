@@ -61,21 +61,29 @@ const Header = () => {
   return (
     <>
       <header
-        style={{ position: 'sticky', zIndex: '998', backgroundColor: '#515b6f' }}
-        className="height-45 display-flex-space-around padding-0"
+        style={{
+          position: 'sticky',
+          zIndex: '998',
+          backgroundColor: '#515b6f',
+          height: '45.8px',
+          borderBottom: '1px solid #504e4e',
+        }}
+        className="display-flex-space-around padding-0"
       >
-        <div style={{ width: '1140px' }} className="full-height d-flex justify-content-between">
+        <div style={{ width: '1140px', paddingLeft: '15px' }} className="full-height d-flex justify-content-between">
           <Row className="align-items-center full-height">
             <Col span={12}>
               {/* <Typography.Title level={4} className="margin-0 color-light font-size-18">
                 MyMin Tools
               </Typography.Title> */}
-              <span className="color-light font-size-18 font-weight-normal">MyMin Tools</span>
+              <span style={{ letterSpacing: '0px' }} className="color-light font-size-18 font-weight-normal">
+                MyMin Tools
+              </span>
               {/* <a href="javscript:;" className="header__toggle" onClick={toggleLayout}>
                 {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
               </a> */}
             </Col>
-            <Col span={12} className="text-right">
+            <Col span={12} className="text-right full-height">
               <Control />
             </Col>
           </Row>

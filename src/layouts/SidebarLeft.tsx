@@ -9,7 +9,9 @@ const SidebarLeft = () => {
     <div className="sider m-t-5" style={{ width: '254.93px', height: '100vh' }}>
       <Layout.Sider className="position-rel top-0 background-none full-height">
         <div className="menu-sider-container">
-          <MenuSider />
+          <div className="menu-sider-wrapper">
+            <MenuSider />
+          </div>
         </div>
         <div className="account-groups full-height" style={{ boxShadow: '0 6px 10px -4px #00000029' }}>
           <AccountGroups />
