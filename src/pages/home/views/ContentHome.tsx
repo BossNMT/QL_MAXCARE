@@ -95,7 +95,7 @@ const ContentHome = () => {
         </Tooltip>
 
         <Tooltip
-          overlayInnerStyle={{ color: '#26323d', fontSize: '17.9999px' }}
+          overlayInnerStyle={{ color: '#26323d', fontSize: '13px' }}
           color={'white'}
           title="Gỡ checkpoint chạy giả lập ẩn"
         >
@@ -110,22 +110,46 @@ const ContentHome = () => {
       </div>
       <div className="content-right display-flex-center" style={{ marginRight: '11.7px' }}>
         <Space size={21.7} style={{ lineHeight: '16px', marginTop: '4px' }}>
-          <i
-            className="icon-clock cursor-pointer font-20 icon-color"
-            style={{ color: '#999', fontSize: '17.9999px', marginRight: '-1px' }}
-          ></i>
-          <i
-            className="icon-folder-alt cursor-pointer font-20 icon-color"
-            style={{ color: '#999', fontSize: '17.9999px' }}
-          ></i>
-          <i
-            className="icon-cloud-download cursor-pointer font-20 icon-color"
-            style={{ color: '#999', fontSize: '21px' }}
-          ></i>
-          <i
-            className="icon-trash cursor-pointer font-20 icon-color"
-            style={{ color: '#999', fontSize: '17.9999px' }}
-          ></i>
+          <Tooltip
+            overlayInnerStyle={{ textAlign: 'center', color: '#26323d', fontSize: '13px' }}
+            color={'white'}
+            title="Gia hạn ngày sử dụng"
+          >
+            <i
+              className="icon-clock cursor-pointer font-20 icon-color"
+              style={{ color: '#999', fontSize: '17.9999px', marginRight: '-1px' }}
+            ></i>
+          </Tooltip>
+          <Tooltip
+            overlayInnerStyle={{ textAlign: 'center', color: '#26323d', fontSize: '13px' }}
+            color={'white'}
+            title="Chuyển các tài khoản đã chọn qua nhóm khác"
+          >
+            <i
+              className="icon-folder-alt cursor-pointer font-20 icon-color"
+              style={{ color: '#999', fontSize: '17.9999px' }}
+            ></i>
+          </Tooltip>
+          <Tooltip
+            overlayInnerStyle={{ textAlign: 'center', color: '#26323d', fontSize: '13px' }}
+            color={'white'}
+            title="Xuất tài khoản trong nhóm hoặc các tài khoản đã chọn"
+          >
+            <i
+              className="icon-cloud-download cursor-pointer font-20 icon-color"
+              style={{ color: '#999', fontSize: '21px' }}
+            ></i>
+          </Tooltip>
+          <Tooltip
+            overlayInnerStyle={{ textAlign: 'center', color: '#26323d', fontSize: '13px' }}
+            color={'white'}
+            title="Xóa các tài khoản đã chọn"
+          >
+            <i
+              className="icon-trash cursor-pointer font-20 icon-color"
+              style={{ color: '#999', fontSize: '17.9999px' }}
+            ></i>
+          </Tooltip>
         </Space>
       </div>
     </div>

@@ -51,6 +51,7 @@ const HeaderInfo = () => {
                   padding: '4px 0',
                   marginRight: '14px',
                   marginTop: '-1px',
+                  backgroundColor: 'transparent',
                 }}
                 shape="circle"
                 icon={<FontAwesomeIcon style={{ fontSize: '11px' }} icon={faPlus} />}
@@ -67,23 +68,30 @@ const HeaderInfo = () => {
                   height: '21px',
                   padding: '4px 0',
                   marginTop: '-1px',
+                  backgroundColor: 'transparent',
                 }}
                 shape="circle"
                 icon={<FontAwesomeIcon style={{ fontSize: '11px' }} icon={faRightLeft} />}
               />
             </Tooltip>
           </div>
-          <div
-            className="coins-info border-rd-20 color-light display-inline-block letter-spacing-0"
-            style={{ background: '#72c02c', fontSize: '11.2px', padding: '4.8px 10px', lineHeight: '11.2px' }}
+          <Tooltip
+            overlayInnerStyle={{ color: '#555', textAlign: 'center' }}
+            color={'white'}
+            title="MCoin V2 là đơn vị tiền tệ được sử dụng riêng trên MHCP, bạn có thể chuyển đổi MCoin V2 tại https://mymin.net/thayphan/profile"
           >
-            <span className="title-coins">
-              <span className="number-coins" style={{ marginRight: '3px' }}>
-                0
+            <div
+              className="coins-info border-rd-20 color-light display-inline-block letter-spacing-0"
+              style={{ background: '#72c02c', fontSize: '11.2px', padding: '4.8px 10px', lineHeight: '11.2px' }}
+            >
+              <span className="title-coins">
+                <span className="number-coins" style={{ marginRight: '3px' }}>
+                  0
+                </span>
+                MCoin V2
               </span>
-              MCoin V2
-            </span>
-          </div>
+            </div>
+          </Tooltip>
         </div>
       </div>
     </div>

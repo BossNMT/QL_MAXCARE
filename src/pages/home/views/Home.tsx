@@ -2,7 +2,7 @@ import '../styles/_home.scss';
 import { Divider } from 'antd';
 import HeaderHome from './HeaderHome';
 import ContentHome from './ContentHome';
-// import AccountResult from './AccountResult';
+import AccountResult from './AccountResult';
 
 const Home = () => {
   return (
