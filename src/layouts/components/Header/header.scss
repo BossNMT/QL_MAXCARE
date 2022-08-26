@@ -19,6 +19,9 @@
 }
   
 // Menu
+.menu-header li:nth-child(8) span {
+  color: #18ba9b !important;
+}
 .menu::after {
   content: '';
   display: block;

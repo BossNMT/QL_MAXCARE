@@ -1,3 +1,4 @@
+import './Media.scss';
 interface PropsMedia {
   update: string;
   detail: string;
@@ -25,7 +26,7 @@ const Media = ({ update, detail, time, looked }: PropsMedia) => {
               {detail}
             </a>
           ) : (
-            <a style={{ color: '#72c02c' }} href="/">
+            <a className="looked" style={{ color: '#72c02c' }} href="/">
               {detail}
             </a>
           )}

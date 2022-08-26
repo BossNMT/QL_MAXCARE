@@ -3,9 +3,10 @@
 }
 
 .list-icons-account  {
-    .anticon-up:hover, 
-    .anticon-down:hover,
-    .anticon-delete:hover {
+    .iconUpDown:hover {
+        transform: scale(1.2);
+    }
+    .icon-trash:hover {
         transform: scale(1.2);
     }
 }

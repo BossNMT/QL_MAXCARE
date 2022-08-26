@@ -48,7 +48,7 @@ const Account = ({ name, number, date, time }: AccountProps) => {
               <i style={{ fontSize: '17.9999px' }} className="iconUpDown icon-arrow-down"></i>
             </Tooltip>
             <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Xóa nhóm">
-              <i style={{ fontSize: '17.9999px' }} className="icon-trash"></i>
+              <i style={{ fontSize: '17.9999px' }} className="icon-trash display-inline-block"></i>
             </Tooltip>
           </Space>
         </div>
