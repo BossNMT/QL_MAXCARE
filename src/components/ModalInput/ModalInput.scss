@@ -1,0 +1,21 @@
+// Slider Modal Input
+.slider-modal {
+    .ant-slider-rail {
+        background-color: #eee;
+    }
+    .ant-slider-track {
+        background-color: #72c02c;
+    }
+    .ant-slider-handle {
+        border-color: #72c02c;
+    }
+    .ant-slider-handle:focus {
+        box-shadow: unset;
+    }
+    &:hover .ant-slider-handle:not(.ant-tooltip-open) {
+        border-color: #72c02c !important;
+    }
+    &:hover .ant-slider-track {
+        background-color: #72c02c !important;
+    }
+}
