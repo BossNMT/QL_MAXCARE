@@ -1,6 +1,6 @@
 import { Input, Checkbox, Tooltip } from 'antd';
 import Account from 'components/Account/Account';
-import './styles/_sidebar.scss';
+import './sidebar.scss';
 
 const AccountGroups = () => {
   return (

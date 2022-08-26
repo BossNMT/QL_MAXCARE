@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from 'antd';
 // import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import PermissionRoute from 'middleware/PermissionRoute';
-import './styles/_sidebar.scss';
+import './components/Sidebar/sidebar.scss';
 // import logo from 'assets/images/logo.png';
 // import { collapseSidebar } from 'store/common/commonSlice';
 // import { useAppSelector } from 'hooks/hookStore';

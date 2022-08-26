@@ -2,7 +2,7 @@ import '../styles/_home.scss';
 import { Tooltip, Input, Popover } from 'antd';
 import ModalInput from 'components/ModalInput/ModalInput';
 
-const HomeHeader = () => {
+const HeaderHome = () => {
   return (
     <div className="home-header flex-justify-between" style={{ height: '54px' }}>
       <div className="header-left" style={{ width: '395.73px', margin: '8.7px 0' }}>
@@ -69,4 +69,4 @@ const HomeHeader = () => {
   );
 };
 
-export default HomeHeader;
+export default HeaderHome;

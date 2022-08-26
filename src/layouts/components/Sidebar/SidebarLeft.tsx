@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout } from 'antd';
-import './styles/_sidebar.scss';
 import MenuSider from './MenuSider';
 import AccountGroups from './AccountGroups';
+import './sidebar.scss';
 
 const SidebarLeft = () => {
   return (

@@ -12,8 +12,13 @@ const AccountResult = () => {
         </div>
         <div className="button-account p-4 display-flex-center" style={{ height: '48.88px', width: '51.13px' }}>
           <span
-            className="border-rd-5 color-light display-block"
-            style={{ backgroundColor: '#72c02c', fontSize: '12.6px', padding: '5px 9px', lineHeight: '12.6px' }}
+            className="border-rd-5 color-light display-block letter-spacing-0"
+            style={{
+              backgroundColor: '#72c02c',
+              fontSize: '12.6px',
+              padding: '5.6px 10px 4.1px 10px',
+              lineHeight: '12.6px',
+            }}
           >
             Live
           </span>

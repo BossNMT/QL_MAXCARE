@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { Layout, Spin } from 'antd';
 import { isLogin } from 'utils/jwt';
 // import BreadCrumbCustom from 'components/breadcrumbCustom/BreadCrumbCustom';
-const Header = React.lazy(() => import('./Header'));
+const Header = React.lazy(() => import('./components/Header/Header'));
 // const Sidebar = React.lazy(() => import('./Sidebar'));
 // const PermissionContent = React.lazy(() => import('middleware/PermissionContent'));
-import MenuHeader from './MenuHeader';
-import SidebarLeft from './SidebarLeft';
+import MenuHeader from './components/Header/MenuHeader';
+import SidebarLeft from './components/Sidebar/SidebarLeft';
 import Home from '../pages/home/views/Home';
 import Info from 'components/Info/Info';
 

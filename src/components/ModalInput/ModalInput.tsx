@@ -14,36 +14,21 @@ const ModalInput = () => {
   const [form9, setForm9] = useState(1);
   const [form10, setForm10] = useState(1);
 
-  const onChangeForm1 = (e: RadioChangeEvent) => {
-    setForm1(e.target.value);
+  const createChange = (callback) => {
+    return (e: RadioChangeEvent) => {
+      callback(e.target.value);
+    };
   };
-  const onChangeForm2 = (e: RadioChangeEvent) => {
-    setForm2(e.target.value);
-  };
-  const onChangeForm3 = (e: RadioChangeEvent) => {
-    setForm3(e.target.value);
-  };
-  const onChangeForm4 = (e: RadioChangeEvent) => {
-    setForm4(e.target.value);
-  };
-  const onChangeForm5 = (e: RadioChangeEvent) => {
-    setForm5(e.target.value);
-  };
-  const onChangeForm6 = (e: RadioChangeEvent) => {
-    setForm6(e.target.value);
-  };
-  const onChangeForm7 = (e: RadioChangeEvent) => {
-    setForm7(e.target.value);
-  };
-  const onChangeForm8 = (e: RadioChangeEvent) => {
-    setForm8(e.target.value);
-  };
-  const onChangeForm9 = (e: RadioChangeEvent) => {
-    setForm9(e.target.value);
-  };
-  const onChangeForm10 = (e: RadioChangeEvent) => {
-    setForm10(e.target.value);
-  };
+  const onChangeForm1 = createChange(setForm1);
+  const onChangeForm2 = createChange(setForm2);
+  const onChangeForm3 = createChange(setForm3);
+  const onChangeForm4 = createChange(setForm4);
+  const onChangeForm5 = createChange(setForm5);
+  const onChangeForm6 = createChange(setForm6);
+  const onChangeForm7 = createChange(setForm7);
+  const onChangeForm8 = createChange(setForm8);
+  const onChangeForm9 = createChange(setForm9);
+  const onChangeForm10 = createChange(setForm10);
 
   return (
     <div className="wrapper modal-input" style={{ color: '#999' }}>
@@ -69,6 +54,7 @@ const ModalInput = () => {
           <Checkbox style={{ color: '#999' }}>Lấy danh sách ngẫu nhiên</Checkbox>
         </Popover>
       </div>
+
       <div className="form-groups-2" style={{ padding: '7px 25.5px' }}>
         <div className="form-title letter-spacing-0" style={{ marginTop: '-1px' }}>
           Lọc tình trạng xóa

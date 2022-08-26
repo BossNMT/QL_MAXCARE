@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 // import { changeLanguageInput, collapseSidebar } from 'store/common/commonSlice';
 // import { changeLanguageInput } from 'store/common/commonSlice';
 import { destroyLogged, saveAuth } from 'utils/jwt';
-import './styles/_header.scss';
+import './header.scss';
 import Control from './Control';
 
 // const { Option } = Select;

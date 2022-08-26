@@ -1,7 +1,7 @@
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import React, { useState } from 'react';
-import './styles/_header.scss';
+import './header.scss';
 
 const items: MenuProps['items'] = [
   {

@@ -1,7 +1,7 @@
 import '../styles/_home.scss';
 import { Tooltip, Checkbox, Button, Space } from 'antd';
 
-const HomeContent = () => {
+const ContentHome = () => {
   return (
     <div className="home-content flex-justify-between" style={{ height: '23.1px', margin: '11px 0 10px 0' }}>
       <div className="content-left display-flex-center">
@@ -132,4 +132,4 @@ const HomeContent = () => {
   );
 };
 
-export default HomeContent;
+export default ContentHome;
