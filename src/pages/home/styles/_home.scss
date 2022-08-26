@@ -55,3 +55,34 @@
   padding: 0 5px;
   border-right: 1px solid #e3e3e3;
 }
+
+// Override Modal Input
+.modal-input.ant-popover {
+  left: 294px !important;
+  top: 132px !important;
+
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .ant-popover-inner-content {
+    padding: 0px;
+  }
+
+  .ant-radio-inner::after {
+    background-color: #72c02c;
+  }
+  .ant-radio-checked .ant-radio-inner {
+    border-color: #72c02c;
+  } 
+  .ant-radio:hover .ant-radio-inner {
+    border-color: #d9d9d9;
+  }
+  .ant-radio.ant-radio-checked:hover .ant-radio-inner {
+    border-color: #72c02c;
+  }
+  .ant-radio-checked::after {
+    border: none;
+  }
+}
+

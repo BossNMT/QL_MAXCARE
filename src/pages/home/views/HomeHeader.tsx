@@ -1,10 +1,11 @@
 import '../styles/_home.scss';
-import { Tooltip, Input } from 'antd';
+import { Tooltip, Input, Popover } from 'antd';
+import ModalInput from 'components/ModalInput/ModalInput';
 
 const HomeHeader = () => {
   return (
     <div className="home-header flex-justify-between" style={{ height: '54px' }}>
-      <div className="header-left" style={{ width: '395.73px', margin: '10px 0' }}>
+      <div className="header-left" style={{ width: '395.73px', margin: '8.7px 0' }}>
         <Tooltip
           className="tooltip-input-home"
           color={'white'}
@@ -17,19 +18,31 @@ const HomeHeader = () => {
             padding: '4px',
           }}
         >
-          <Input
-            bordered={false}
-            className="display-block border-rd-5 font-14 input-home"
-            placeholder="Nhập uid hoặc từ khóa để tìm, mỗi uid, từ khóa cách nhau dấu phẩy"
-            style={{
-              backgroundColor: '#f6f7f9',
-              borderTopRightRadius: '0px',
-              borderBottomRightRadius: '0px',
-              padding: '7px 10.5px',
-              lineHeight: '1.43',
-              color: '#555',
+          <Popover
+            overlayClassName="modal-input"
+            overlayInnerStyle={{
+              width: '396.73px',
+              border: '1px solid rgba(0, 0, 0, .15)',
+              boxShadow: '0 6px 12px rgb(0 0 0 / 18%)',
             }}
-          />
+            trigger="click"
+            placement="bottom"
+            content={<ModalInput />}
+          >
+            <Input
+              bordered={false}
+              className="display-block border-rd-5 font-14 input-home"
+              placeholder="Nhập uid hoặc từ khóa để tìm, mỗi uid, từ khóa cách nhau dấu phẩy"
+              style={{
+                backgroundColor: '#f6f7f9',
+                borderTopRightRadius: '0px',
+                borderBottomRightRadius: '0px',
+                padding: '7.4px 10.5px',
+                lineHeight: '1.43',
+                color: '#555',
+              }}
+            />
+          </Popover>
         </Tooltip>
       </div>
       <div className="header-right display-flex-center" style={{ margin: '15px 0', height: '22.4px' }}>

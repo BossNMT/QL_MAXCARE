@@ -9,6 +9,7 @@ const Header = React.lazy(() => import('./Header'));
 import MenuHeader from './MenuHeader';
 import SidebarLeft from './SidebarLeft';
 import Home from '../pages/home/views/Home';
+import Info from 'components/Info/Info';
 
 const { Content } = Layout;
 
@@ -63,14 +64,13 @@ const DefaultLayout = () => {
             <Home />
           </Content>
           <div
-            className="sidebar-right"
+            className="sidebar-right bg-color-light"
             style={{
               width: '254.93px',
-              height: '100vh',
-              border: '1px solid #ddd',
-              boxShadow: 'rgb(0 0 0 / 16%) 0px 6px 10px -4px',
             }}
-          ></div>
+          >
+            <Info />
+          </div>
         </Layout>
       </Layout>
     </Layout>

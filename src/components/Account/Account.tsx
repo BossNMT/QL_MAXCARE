@@ -16,7 +16,7 @@ const Account = ({ name, number, date, time }: AccountProps) => {
       className="account-container border-rd-3 cursor-pointer"
       style={{ padding: '3px 10px', borderBottom: '1px solid #eee' }}
     >
-      <div className="account-header flex-justify-between" style={{ marginTop: '1px' }}>
+      <div className="account-header flex-justify-between" style={{ marginTop: '1.5px' }}>
         <h5
           className="account-name font-weight-semibold margin-0 letter-spacing-0"
           style={{ color: '#000', lineHeight: '24.5px', fontSize: '17.5px' }}
@@ -29,7 +29,7 @@ const Account = ({ name, number, date, time }: AccountProps) => {
         >{`${date}  ${time}`}</span>
       </div>
       <div className="account-content flex-justify-between" style={{ height: '34.97px' }}>
-        <div className="account-user display-flex-center">
+        <div className="account-user display-flex-center" style={{ marginTop: '1px' }}>
           <UserOutlined style={{ color: '#555', marginRight: '7px' }} />
           <span className="account-number font-weight-bold font-size-16" style={{ color: '#70ab2c' }}>
             {number}

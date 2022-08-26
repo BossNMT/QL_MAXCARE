@@ -9,15 +9,18 @@ const AccountGroups = () => {
         className="header-groups flex-justify-between padding-10 align-items-center"
         style={{ borderBottom: '1px solid #d3d6db' }}
       >
-        <span className="font-weight-bold letter-spacing-0" style={{ lineHeight: '25.6px', color: '#333' }}>
+        <span
+          className="font-weight-bold letter-spacing-0"
+          style={{ lineHeight: '25.6px', color: '#333', marginTop: '-1px' }}
+        >
           Manager Account Groups
         </span>
         <div
           className="icon-groups display-flex-center font-20 cursor-pointer"
-          style={{ color: '#65686b', margin: '2px -0.5px 0 0' }}
+          style={{ color: '#65686b', margin: '3px -0.5px 0 0' }}
         >
           <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Tạo nhóm">
-            <i className="icon icon-plus" style={{ marginRight: '9px' }}></i>
+            <i className="icon icon-plus" style={{ marginRight: '9.1px' }}></i>
           </Tooltip>
           <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Thiết lập">
             <i className="icon icon-settings"></i>
@@ -25,7 +28,7 @@ const AccountGroups = () => {
         </div>
       </div>
       <div>
-        <div className="input-groups" style={{ padding: '7px 10px 5px 10px', height: '29px' }}>
+        <div className="input-groups" style={{ padding: '7.5px 10px 5px 10px', height: '29px' }}>
           <Input
             className="font-12 padding-0 display-block height-16 input-sider-left"
             style={{ maxWidth: '95%' }}
@@ -34,7 +37,10 @@ const AccountGroups = () => {
           />
         </div>
         <div style={{ backgroundColor: '#f6f7f9', padding: '5px 10px' }} className="result-search display-flex-column">
-          <div className="title-search letter-spacing-0" style={{ color: '#6c9cdd', lineHeight: '22.4px' }}>
+          <div
+            className="title-search letter-spacing-0"
+            style={{ color: '#6c9cdd', lineHeight: '22.4px', marginTop: '0.5px' }}
+          >
             Vui lòng chọn nhóm tài khoản
           </div>
           <div className="checkbox flex-justify-end" style={{ height: '22.4px' }}>

@@ -6,7 +6,7 @@ import AccountGroups from './AccountGroups';
 
 const SidebarLeft = () => {
   return (
-    <div className="sider m-t-5" style={{ width: '254.93px', height: '100vh' }}>
+    <div className="sider m-t-5" style={{ width: '254.93px' }}>
       <Layout.Sider className="position-rel top-0 background-none full-height">
         <div className="menu-sider-container">
           <div className="menu-sider-wrapper">

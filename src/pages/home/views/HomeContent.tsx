@@ -3,7 +3,7 @@ import { Tooltip, Checkbox, Button, Space } from 'antd';
 
 const HomeContent = () => {
   return (
-    <div className="home-content flex-justify-between" style={{ height: '23.1px', margin: '10px 0' }}>
+    <div className="home-content flex-justify-between" style={{ height: '23.1px', margin: '11px 0 10px 0' }}>
       <div className="content-left display-flex-center">
         <Checkbox
           className="checkbox-home m-l-8"
