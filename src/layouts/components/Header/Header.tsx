@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 // import { changeLanguageInput } from 'store/common/commonSlice';
 import { destroyLogged, saveAuth } from 'utils/jwt';
 import './header.scss';
-import Control from './Control';
+import ControlHeader from './ControlHeader';
 
 // const { Option } = Select;
 
@@ -84,7 +84,7 @@ const Header = () => {
               </a> */}
             </Col>
             <Col span={12} className="text-right full-height">
-              <Control />
+              <ControlHeader />
             </Col>
           </Row>
         </div>

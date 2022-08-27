@@ -53,16 +53,28 @@ const HeaderHome = () => {
           Đã chọn 0 tài khoản,Hiển thị 0 {'>'} 0 của 0 kết quả
         </span>
         <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Trang trước">
-          <i className="icon-arrow-left font-14" style={{ color: '#555555', paddingRight: '3.5px' }}></i>
+          <i
+            className="icon-color cursor-pointer icon-arrow-left font-14"
+            style={{ color: '#555555', paddingRight: '3.5px' }}
+          ></i>
         </Tooltip>
         <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Trang sau">
-          <i className="icon-arrow-right font-14" style={{ color: '#555555', paddingRight: '3px' }}></i>
+          <i
+            className="icon-color cursor-pointer icon-arrow-right font-14"
+            style={{ color: '#555555', paddingRight: '3px' }}
+          ></i>
         </Tooltip>
         <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Lọc tài khoản">
-          <i className="icon-magnifier" style={{ color: '#999', fontSize: '17.5px', padding: '7px 8px 5px 5px' }}></i>
+          <i
+            className="icon-color cursor-pointer icon-magnifier"
+            style={{ color: '#999', fontSize: '17.5px', padding: '7px 8px 5px 5px' }}
+          ></i>
         </Tooltip>
         <Tooltip overlayInnerStyle={{ color: '#555' }} color={'white'} title="Tải lại danh sách">
-          <i className="icon-refresh p-5 font-20" style={{ color: '#999', marginRight: '6px' }}></i>
+          <i
+            className="icon-color cursor-pointer icon-refresh p-5 font-20"
+            style={{ color: '#999', marginRight: '6px' }}
+          ></i>
         </Tooltip>
       </div>
     </div>

@@ -42,7 +42,7 @@ const AccountResult = () => {
           Login finish. Updated Cookie default
         </div>
         <i
-          className="icon-trash cursor-pointer icon-color"
+          className="icon-trash cursor-pointer"
           style={{ color: '#999', fontSize: '17.9999px', lineHeight: '49.1px', padding: '0 9px' }}
         ></i>
       </div>
