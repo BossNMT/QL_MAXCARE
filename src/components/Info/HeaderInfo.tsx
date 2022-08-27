@@ -1,5 +1,5 @@
 import './Info.scss';
-import { Avatar, Button, Tooltip } from 'antd';
+import { Avatar, Button, Popover, Tooltip } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faRightLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -75,10 +75,17 @@ const HeaderInfo = () => {
               />
             </Tooltip>
           </div>
-          <Tooltip
-            overlayInnerStyle={{ color: '#555', textAlign: 'center' }}
-            color={'white'}
-            title="MCoin V2 là đơn vị tiền tệ được sử dụng riêng trên MHCP, bạn có thể chuyển đổi MCoin V2 tại https://mymin.net/thayphan/profile"
+          <Popover
+            placement="topLeft"
+            overlayClassName="popover-coin"
+            overlayInnerStyle={{ textAlign: 'center', borderRadius: '5px' }}
+            overlayStyle={{ width: '374px' }}
+            content={
+              <div style={{ lineHeight: '19px' }}>
+                MCoin V2 là đơn vị tiền tệ được sử dụng riêng trên MHCP, bạn có thể chuyển đổi MCoin V2 tại
+                https://mymin.net/thayphan/profile
+              </div>
+            }
           >
             <div
               className="coins-info border-rd-20 color-light display-inline-block letter-spacing-0"
@@ -91,7 +98,7 @@ const HeaderInfo = () => {
                 MCoin V2
               </span>
             </div>
-          </Tooltip>
+          </Popover>
         </div>
       </div>
     </div>

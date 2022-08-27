@@ -42,7 +42,7 @@ const ModalInput = () => {
       />
       <Divider style={{ margin: '4px 10px -1px 10px', minWidth: 'unset', width: 'unset' }} />
       <div className="form-groups-2 letter-spacing-0" style={{ padding: '12px 26.5px' }}>
-        <Popover content={<div>Hế thống sẽ đưa ra danh sách phù hợp ngẫu nhiên thay vì hệ thống cũ</div>}>
+        <Popover>
           <Checkbox style={{ color: '#999' }}>Lấy danh sách ngẫu nhiên</Checkbox>
         </Popover>
       </div>

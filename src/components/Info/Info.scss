@@ -9,3 +9,18 @@
     color: #fff !important;
     background-color: #3398dc !important;
 }
+
+// Custom Popover MCoin
+.popover-coin {
+    &.ant-popover {
+        top: 102px !important;
+        left: 1156px !important;
+    }
+    .ant-popover-arrow {
+        right: 85px;
+    }
+    .ant-popover-inner-content {
+        padding: 8px 16px;
+        color: #555;
+    }
+}

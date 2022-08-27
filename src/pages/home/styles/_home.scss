@@ -43,21 +43,12 @@
 }
 
 // Account Home
-.wrapper-account {
-  background-color: #ba636313;
-}
 .wrapper-account:hover {
   background-color: #00000013;
 }
 
 .info-Link:hover {
   text-decoration: underline #72c02c;
-}
-
-// InfoAccount
-.list-item {
-  padding: 0 5px;
-  border-right: 1px solid #e3e3e3;
 }
 
 // Custom Modal Input
@@ -114,5 +105,18 @@
     border-top: 0;
     border-left: 0;
   }
+  .ant-radio-input:focus + .ant-radio-inner {
+    box-shadow: unset !important;
+  }
 }
 
+// Info Account
+.info-icons li {
+  display: inline-block;
+  line-height: 10px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.info-icons li:last-child {
+  border: none !important;
+}

@@ -1,3 +1,4 @@
+import { Tooltip } from 'antd';
 import Media from 'components/Media/Media';
 import './Info.scss';
 
@@ -9,12 +10,14 @@ const UpdateInfo = () => {
           <span className="notify-title font-weight-bold letter-spacing-0" style={{ lineHeight: '18px' }}>
             Thông báo
           </span>
-          <span
-            className="notify-deadline letter-spacing-0 font-size-16 word-excerpt"
-            style={{ color: '#f00', lineHeight: '25.6px' }}
-          >
-            Hết hạn: 23:59:00 31/01/2020
-          </span>
+          <Tooltip title="Hết hạn: 23:59:00 31/01/2020" overlayInnerStyle={{ color: '#555' }} color={'white'}>
+            <span
+              className="notify-deadline letter-spacing-0 font-size-16 word-excerpt"
+              style={{ color: '#f00', lineHeight: '25.6px' }}
+            >
+              Hết hạn: 23:59:00 31/01/2020
+            </span>
+          </Tooltip>
         </div>
       </div>
       <div className="important-container">

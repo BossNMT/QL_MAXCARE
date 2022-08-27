@@ -116,7 +116,7 @@ const ContentHome = () => {
             title="Gia hạn ngày sử dụng"
           >
             <i
-              className="icon-clock cursor-pointer font-20 icon-color"
+              className="icon-clock cursor-pointer icon-color"
               style={{ color: '#999', fontSize: '17.9999px', marginRight: '-1px' }}
             ></i>
           </Tooltip>
@@ -126,7 +126,7 @@ const ContentHome = () => {
             title="Chuyển các tài khoản đã chọn qua nhóm khác"
           >
             <i
-              className="icon-folder-alt cursor-pointer font-20 icon-color"
+              className="icon-folder-alt cursor-pointer icon-color"
               style={{ color: '#999', fontSize: '17.9999px' }}
             ></i>
           </Tooltip>
@@ -136,7 +136,7 @@ const ContentHome = () => {
             title="Xuất tài khoản trong nhóm hoặc các tài khoản đã chọn"
           >
             <i
-              className="icon-cloud-download cursor-pointer font-20 icon-color"
+              className="icon-cloud-download cursor-pointer icon-color"
               style={{ color: '#999', fontSize: '21px' }}
             ></i>
           </Tooltip>
@@ -145,10 +145,7 @@ const ContentHome = () => {
             color={'white'}
             title="Xóa các tài khoản đã chọn"
           >
-            <i
-              className="icon-trash cursor-pointer font-20 icon-color"
-              style={{ color: '#999', fontSize: '17.9999px' }}
-            ></i>
+            <i className="icon-trash cursor-pointer icon-color" style={{ color: '#999', fontSize: '17.9999px' }}></i>
           </Tooltip>
         </Space>
       </div>

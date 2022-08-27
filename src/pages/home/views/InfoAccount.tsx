@@ -3,7 +3,7 @@ import '../styles/_home.scss';
 
 const InfoAccount = () => {
   return (
-    <div className="info-account p-4 cursor-pointer">
+    <div className="info-account p-4 cursor-pointer" style={{ width: '390px' }}>
       <div className="wrapper">
         <div className="info-title" style={{ height: '19.6px' }}>
           <Link to="/" className="info-Link">
@@ -18,41 +18,49 @@ const InfoAccount = () => {
             </h5>
           </Link>
         </div>
-        <div className="info-icons" style={{ marginTop: '1px' }}>
-          <i className="icon-list cursor-pointer list-item" style={{ color: '#555', padding: '3px 4.5px 0 0' }}></i>
-          <i className="icon-reload cursor-pointer list-item " style={{ color: '#555' }}></i>
-          <div className="list-item display-inline-block" style={{ lineHeight: '14px' }}>
-            <i className="icon-user-follow" style={{ paddingRight: '4px', color: '#979797' }}></i>
-            <span
-              className="font-14 letter-spacing-0 font-weight-bold"
-              style={{
-                color: '#f79600',
-                marginRight: '3px',
-                transform: ' scaleY(1.1)',
-              }}
-            >
+        <ul className="info-icons" style={{ padding: '0', margin: '1px 0 0 -5px', listStyle: 'none', height: '20px' }}>
+          <li className="p-0-5">
+            <i className="icon-list font-14 cursor-pointer list-item" style={{ color: '#555', marginTop: '3px' }}></i>
+          </li>
+          <li className="p-0-5">
+            <i
+              className="icon-reload font-14 cursor-pointer list-item"
+              style={{ color: '#555', margin: '3px -1px 0 0' }}
+            ></i>
+          </li>
+          <li className="p-0-5" style={{ paddingRight: '8px', paddingLeft: '5px' }}>
+            <i
+              className="icon-user-follow font-14 cursor-pointer"
+              style={{ color: '#979797', margin: '3px 5px 0 0' }}
+            ></i>
+            <span className="font-weight-bold letter-spacing-0" style={{ color: '#f79600' }}>
               3452
             </span>
-          </div>
-          <div
-            className="list-item display-inline-block m-r-5"
-            style={{ lineHeight: '14px', paddingRight: '3px', paddingLeft: '5.1px' }}
-          >
-            <i className="icon-people" style={{ paddingRight: '5px', color: '#979797' }}></i>
-            <span style={{ color: '#a2a3a5' }}>0</span>
-          </div>
-          <div className="list-item display-inline-block m-r-5" style={{ lineHeight: '10px' }}>
-            <i className="icon-clock" style={{ paddingRight: '5px', color: '#979797' }}></i>
-            <span style={{ color: '#e86060', letterSpacing: '0' }}>Hết hạn</span>
-          </div>
-          <div className="list-item display-inline-block m-r-5" style={{ lineHeight: '10px', border: 'none' }}>
-            <i className="icon-cloud-upload font-15" style={{ paddingRight: '5px', color: '#979797' }}></i>
-            <span style={{ color: '#979797' }}>
+          </li>
+          <li className="p-0-5">
+            <i
+              className="icon-people cursor-pointer font-14"
+              style={{ color: '#979797', margin: '3px 4.5px 0 -0.2px' }}
+            ></i>
+            <span style={{ color: '#a2a3a5', marginRight: '-1px' }}>0</span>
+          </li>
+          <li>
+            <i
+              className="icon-clock cursor-pointer font-14"
+              style={{ color: '#979797', margin: '3px 4.5px 0 9.5px' }}
+            ></i>
+            <span className="letter-spacing-0" style={{ color: '#e86060', marginRight: '5px' }}>
+              Hết hạn
+            </span>
+          </li>
+          <li>
+            <i className="icon-cloud-upload font-14" style={{ color: '#979797', margin: '3px 4.5px 0 10px' }}></i>
+            <span className="letter-spacing-0" style={{ color: '#979797' }}>
               <span style={{ color: '#72c02c' }}>v3</span>
               &nbsp;-&nbsp;21:04 01/05
             </span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   );

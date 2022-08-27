@@ -2,7 +2,7 @@ import '../styles/_home.scss';
 import { Divider } from 'antd';
 import HeaderHome from './HeaderHome';
 import ContentHome from './ContentHome';
-import AccountResult from './AccountResult';
+// import AccountResult from './AccountResult';
 
 const Home = () => {
   return (
@@ -10,9 +10,7 @@ const Home = () => {
       <HeaderHome />
       <Divider style={{ margin: '-1px 0 0' }} />
       <ContentHome />
-      {/* <div className="account-result">
-        <AccountResult />
-      </div> */}
+      <div className="account-result">{/* <AccountResult /> */}</div>
     </div>
   );
 };
